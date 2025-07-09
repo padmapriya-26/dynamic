@@ -5,22 +5,22 @@ pipeline {
     stages{
         stage('Build') {
             steps {
-                echo "Build pipeline from main branch"
+                echo "Build pipeline from feature branch"
             }
         }
          stage('scans') {
             steps {
-                echo "scans pipeline from main branch"
+                echo "scans pipeline from feature branch"
             }
         }
          stage('dockerbuild') {
             steps {
-                echo "docker pipeline from main branch"
+                echo "docker pipeline from feature branch"
             }
         }
          stage('deployment') {
             steps {
-                echo "deploying pipeline from main branch"
+                echo "deploying pipeline from feature branch"
             }
         }
     }
